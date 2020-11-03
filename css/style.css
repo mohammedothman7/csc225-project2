@@ -3,3 +3,14 @@
   margin: 0;
   padding: 0;
 }
+
+/* Navbar */
+.nav-item a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+/* Hero */
+.hero {
+  width: 100%;
+  height: 400px;
+}
