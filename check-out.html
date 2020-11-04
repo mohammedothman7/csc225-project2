@@ -29,10 +29,211 @@
       rel="stylesheet"
     />
 
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="./css/check-out.css" />
+
+    <title>Sneakers & Apparels Co.</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark h-20">
+      <a
+        class="navbar-brand mb-1 mr-5"
+        href="./index.html"
+        style="font-family: Roboto Mono, monospace"
+        >Sneakers & Apparels Co.</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul
+          class="navbar-nav mr-auto"
+          style="font-family: Roboto Mono, monospace"
+        >
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Home </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./sneakers.html">Sneakers</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./clothing.html">Clothing</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+        </ul>
+        <a href="./cart.html">
+          <i class="fas fa-shopping-cart fa-2x my-2 my-sm-0 text-white"></i>
+        </a>
+      </div>
+    </nav>
+
+    <div class="d-flex justify-content-center">
+      <div class="card mt-5">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <h2 class="text-center">Contact Information</h2>
+            <form>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName">First Name*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastName">Last Name*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email">Email*</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="phoneNumber">Phone Number*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phoneNumber"
+                    required
+                  />
+                </div>
+              </div>
+            </form>
+          </li>
+
+          <li class="list-group-item">
+            <h2 class="text-center">Address</h2>
+            <form>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="streetAddress">Street Address*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="streetAddress"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="aptNo">APT/UNIT NO.</label>
+                  <input type="text" class="form-control" id="aptNo" required />
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="city">City*</label>
+                  <input type="text" class="form-control" id="city" required />
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="state">State*</label>
+                  <input type="text" class="form-control" id="state" required />
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="zipCode">Zip Code*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zipCode"
+                    required
+                  />
+                </div>
+              </div>
+            </form>
+          </li>
+
+          <li class="list-group-item">
+            <h2 class="text-center">Payment</h2>
+            <form>
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <label for="cardNumber">Card Number*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cardNumber"
+                    required
+                  />
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="nameOnCard">Name on card</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nameonCard"
+                    required
+                  />
+                </div>
+                <div class="col-sm-4 mb-3">
+                  <label for="mm">MM*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="mm"
+                    required
+                    maxlength="2"
+                  />
+                </div>
+                <div class="col-sm-4 mb-3">
+                  <label for="yy">YY*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="yy"
+                    required
+                    maxlength="2"
+                  />
+                </div>
+                <div class="col-sm-4 mb-3">
+                  <label for="csc">CSC*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="csc"
+                    required
+                    maxlength="4"
+                  />
+                </div>
+              </div>
+            </form>
+          </li>
+          <li class="list-group-item">
+            <h2 class="text-center">Order Summary</h2>
+            <p>SUBTOTAL: $221.98</p>
+            <p>SHIPPING: $6.99</p>
+            <p>TAX: $4.38</p>
+            <p>ORDER TOTAL: $233.35</p>
+            <button
+              type="submit"
+              class="btn btn-outline-primary btn-lg btn-block"
+            >
+              Place Order
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
