@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card-header {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  font-size: larger;
+  border-width: 2px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.list-group-item h5 {
+  width: 100%;
+}
