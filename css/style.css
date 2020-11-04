@@ -32,8 +32,8 @@ h2 {
   border-bottom: 2px #fff solid;
 }
 
-.show {
-  z-index: 1002;
+.carousel-item img {
+  height: 500px;
 }
 
 /* Hero */
