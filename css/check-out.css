@@ -1,0 +1,9 @@
+.card {
+  width: 36rem;
+}
+
+p,
+h2 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+}
